@@ -39,7 +39,7 @@ png(filename="plot4.png", width=480, height=480)
 par(mfrow=c(2,2))
 
 # Draw plot 1
-plot(df$DateTime, df$Global_active_power, type="l", xlab=NA, ylab = "Global Active Power (kilowatts)")
+plot(df$DateTime, df$Global_active_power, type="l", xlab=NA, ylab = "Global Active Power")
 
 # Draw plot 2
 plot(df$DateTime, df$Voltage, type="l", xlab="datetime", ylab = "Voltage")
@@ -52,7 +52,7 @@ legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"
        lty=1, bty="n")
 
 # Draw plot 4
-plot(df$DateTime, df$Global_reactive_power, type="l", xlab="datetime")
+plot(df$DateTime, df$Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power")
 
 # Close the graphics device
 dev.off()
