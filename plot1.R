@@ -7,11 +7,9 @@
 #  On Windows, this utility can be made available by installing RTools or an equivalent alternative.
 
 # read data into memory (only the desired range of dates will be read from the file)
-#21/12/2006
 df <- read.table(
-  pipe('grep "^[1-2]/2/2007" "C:/Temp/Coursera/4 Exploratory Data Analysis/Course Project 1/household_power_consumption.txt"'), 
-  sep=";", 
-  colClasses = c("character", "character", "character", "character", "character", "character", "character", "character", "character")
+  pipe('grep "^[1-2]/2/2007" "household_power_consumption.txt"'), 
+  sep=";", colClasses = "character"
 )
 colnames(df) = c("Date", "Time", "Global_active_power", "Global_reactive_power", "Voltage", "Global_intensity", "Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
 
