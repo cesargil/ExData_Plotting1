@@ -115,5 +115,7 @@ The four plots that you will need to construct are shown below.
 ## Instructions
 
 1) In order to run these scripts you need a grep utility installed. It normally comes with Unix and MAC OS. On Windows it can be download and installed using RTools, for example.
+
 2) Each individual script (plot1.R, plot2.R, etc) is self-contained and generates the corresponding image (plot1.png, plot2, etc)
+
 3) Just run each individual script (plot1.R, plot2.R, etc) and the corresponding image will be generated.
